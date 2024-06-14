@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cobro de Administración</title>
+    <link rel="stylesheet" href="pagina.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#payment">Pago en Línea</a></li>
+                <li><a href="#invoices">Facturas</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bienvenido al Sistema de Cobro de Administración</h1>
+            <p>Facilita tus pagos y gestiona tus facturas desde la comodidad de tu hogar.</p>
+        </section>
+
+        <section id="payment">
+            <h2>Pago en Línea</h2>
+            <form id="payment-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="amount">Monto a Pagar:</label>
+                <input type="number" id="amount" name="amount" required>
+
+                <label for="card">Número de Tarjeta:</label>
+                <input type="text" id="card" name="card" required>
+
+                <label for="expiry">Fecha de Expiración:</label>
+                <input type="month" id="expiry" name="expiry" required>
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+
+                <button type="submit">Pagar</button>
+            </form>
+        </section>
+
+        <section id="invoices">
+            <h2>Facturas</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Descripción</th>
+                        <th>Monto</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>01/06/2024</td>
+                        <td>Cuota de Administración</td>
+                        <td>$100.00</td>
+                        <td>Pagado</td>
+                    </tr>
+                    <tr>
+                        <td>01/05/2024</td>
+                        <td>Cuota de Administración</td>
+                        <td>$100.00</td>
+                        <td>Pendiente</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Cobro de Administración. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
